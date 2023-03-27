@@ -1,0 +1,86 @@
+:root {
+    --sand: #ebc069;
+    --cream:  #fff9f6;
+    --sky: #5ac8fc;
+    --green: #1ab011;
+    --ff-logo: 'Shadows Into Light Two', cursive;
+    --ff-main: 'Quicksand', sans-serif;
+    --ff-tittles: 'Mulish', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background-color: #d2cecc;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    font-family: var(--ff-logo);
+    font-size: 4rem;
+}
+
+h2 {
+    font-family: var(--ff-tittles);
+}
+
+p {
+    font-family: var(--ff-main);
+}
+
+.color-grid{
+    width: 80vw;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.4rem;
+}
+
+.green{
+    background-color: var(--green);
+}
+
+.sand {
+    background-color: var(--sand);
+}
+
+.blue {
+    background-color: var(--sky);
+}
+
+.cream {
+    background-color: var(--cream);
+}
